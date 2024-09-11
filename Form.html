@@ -14,7 +14,7 @@
         <input type="checkbox" id="rc" name="check">
         <label for="rc">Check Here</label>
         
-<select name="select" id="sel">
+<select name="select" id="sel" onchange="alertmsg()">
     <option value="Aus">Australia</option>
     <option value="Ind">India</option>
     <option value="Zim">Zimbambue</option>
@@ -24,4 +24,10 @@
 
     </form>
 </body>
+<script>
+    function alertmsg()
+    {
+        alert("Hello!");
+    }
+</script>
 </html>
