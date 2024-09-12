@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+div{
+    background-color: aqua;
+}
+p{
+    background-color: bisque;
+}
+span{
+    background-color: brown;
+}
+a{
+    background-color: chartreuse;
+}
+    </style>
 </head>
+
 <body>
     <form action="submit">
         <label for="uname">Enter Username</label>
@@ -13,21 +29,35 @@
         <label for="rbutton">Male</label>
         <input type="checkbox" id="rc" name="check">
         <label for="rc">Check Here</label>
-        
-<select name="select" id="sel" onchange="alertmsg()">
-    <option value="Aus">Australia</option>
-    <option value="Ind">India</option>
-    <option value="Zim">Zimbambue</option>
-    <option value="Wi">WestIndies</option>
-</select>
-        
 
+        <select name="select" id="sel" onchange="alertmsg()">
+            <option value="Aus">Australia</option>
+            <option value="Ind">India</option>
+            <option value="Zim">Zimbambue</option>
+            <option value="Wi">WestIndies</option>
+        </select>
+        <div>
+            <textarea rows="4" cols="50" placeholder="Enter The Message..." name="tectA" id="Atext"
+                style="margin-top: 40px; height: 200px; width: 200px;"></textarea>
+            <textarea rows="4" cols="50" placeholder="Describe yourself here..."
+                style="margin-top: 40px; height: 200px; width: 200px;"></textarea>
+            <textarea name="comments" id="comments" placeholder="Enter your comments"
+                style="margin-top: 40px; height: 200px; width: 200px;"></textarea>
+        </div>
     </form>
+    <div>
+        my name is manoj
+    </div>
+    <p> uday  is beside me </p>
+    <span>This is span tag</span>
+    <div><a href="www.google.com">Google</a></div>
+    
+
 </body>
 <script>
-    function alertmsg()
-    {
+    function alertmsg() {
         alert("Hello!");
     }
 </script>
+
 </html>
